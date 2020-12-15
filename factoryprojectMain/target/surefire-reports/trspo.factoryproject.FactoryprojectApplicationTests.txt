@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: trspo.factoryproject.FactoryprojectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.353 s <<< FAILURE! - in trspo.factoryproject.FactoryprojectApplicationTests
+contextLoads  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deliveryController': Unsatisfied dependency expressed through field 'deliveryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deliveryServiceImpl': Unsatisfied dependency expressed through field 'VehicleRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'trspo.factoryproject.repo.VehicleRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deliveryServiceImpl': Unsatisfied dependency expressed through field 'VehicleRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'trspo.factoryproject.repo.VehicleRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'trspo.factoryproject.repo.VehicleRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
